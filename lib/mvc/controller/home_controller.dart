@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:developer';
 import 'package:http/http.dart' as http;
 import 'package:pokedex_mvc/mvc/model/pokemon_model.dart';
 import 'package:pokedex_mvc/mvc/model/url_pokemons_model.dart';
@@ -22,6 +21,6 @@ class HomeController {
 
     final responseBody = jsonDecode(response.body);
 
-    return PokemonModel(image: responseBody['sprites']['other']['official-artwork']['front_default']);
+    return toMap(responseBody);
   }
 }
