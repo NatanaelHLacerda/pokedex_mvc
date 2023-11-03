@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pokedex_mvc/mvc/controller/home_controller.dart';
-import 'package:pokedex_mvc/mvc/custom_search_delegate.dart';
+import 'package:pokedex_mvc/mvc/core/utils/custom_search_delegate.dart';
 import 'package:pokedex_mvc/mvc/model/pokemon_model.dart';
 import 'package:pokedex_mvc/mvc/model/url_pokemons_model.dart';
 
